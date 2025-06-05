@@ -4,9 +4,7 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 def is_annagram(target_word, check_word):
-    if len(target_word) != len(check_word):
-        return False
-    return sorted(target_word.lower()) == sorted(check_word.lower())
+    return len(target_word) == len(check_word) and sorted(target_word.lower()) == sorted(check_word.lower())
 
 def in_annagram_list(w, words_list):
     res = []
